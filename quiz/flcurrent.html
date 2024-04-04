@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Flashcard Quiz</title>
+</head>
+<body>
+    <h3>Current Affairs</h3>
+    <div class="flashcards-container">
+        <div class="flashcard" onclick="showOptions(1)">
+            <h2>Question 1</h2>
+            <p>Which of the following is a greenhouse gas?</p>
+            <div id="options1" class="options hidden">
+                <label>
+                    <input type="radio" name="q1" value="option1"> Oxygen
+                </label>
+                <label>
+                    <input type="radio" name="q1" value="option2"> Nitrogen
+                </label>
+                <label>
+                    <input type="radio" name="q1" value="option3"> Carbon dioxide
+                </label>
+                
+            </div>
+        </div>
+
+        <div class="flashcard" onclick="showOptions(2)">
+            <h2>Question 2</h2>
+            <p>What is the chemical symbol for gold</p>
+            <div id="options2" class="options hidden">
+                <label>
+                    <input type="radio" name="q2" value="option1"> Ag
+                </label>
+                <label>
+                    <input type="radio" name="q2" value="option2"> Fe
+                </label>
+                <label>
+                    <input type="radio" name="q2" value="option3"> Au
+                </label>
+               
+            </div>
+        </div>
+
+        <div class="flashcard" onclick="showOptions(3)">
+            <h2>Question 3</h2>
+            <p>Which planet is known as the 'Red Planet'?</p>
+            <div id="options3" class="options hidden">
+                <label>
+                    <input type="radio" name="q3" value="option1"> Venus
+                </label>
+                <label>
+                    <input type="radio" name="q3" value="option2"> Jupiter
+                </label>
+                <label>
+                    <input type="radio" name="q3" value="option3"> Mars
+                </label>
+                
+            </div>
+        </div>
+
+        <div class="flashcard" onclick="showOptions(4)">
+            <h2>Question 4</h2>
+            <p>What is the powerhouse of the cell?</p>
+            <div id="options4" class="options hidden">
+                <label>
+                    <input type="radio" name="q4" value="option1"> Nucleus
+                </label>
+                <label>
+                    <input type="radio" name="q4" value="option2"> Golgi Apparatus
+                </label>
+                <label>
+                    <input type="radio" name="q4" value="option3"> Mitochondria
+                </label>
+                
+            </div>
+        </div>
+    </div>
+    <button><a href="rewards.html"> Submit </a></button>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

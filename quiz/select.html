@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Categories - Quiz Buzz</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-image: url('img2.jpg'); 
+      background-size: cover;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      color: #fff;
+      text-align: center;
+    }
+
+    #categories-container {
+      background-color: rgba(4, 4, 4, 0.734); 
+      padding: 70px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      border-color: black;
+    }
+    h1 {
+      color: white;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 90px;
+
+    }
+
+    .category-button {
+      padding: 20px 30px;
+      font-size: 18px;
+      margin: 10px;
+      background-color: #5cafe6;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 30px;
+      border-color: darkblue;
+
+
+    }
+
+    .category-button:hover {
+      background-color: #1c4d6d;
+      cursor: pointer;
+    }
+    a {
+        text-decoration: none;
+        color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="categories-container">
+    <h1>Choose a Quiz Category</h1>
+    <button class="category-button" onclick="startQuiz('Current Affairs')"><a href="flcurrent.html">Current Affairs</a></button>
+    <button class="category-button" onclick="startQuiz('Vocabulary')">Vocabulary</button>
+    <button class="category-button" onclick="startQuiz('Maths Trivia')"><a href="flashcardMaths.html">Maths Trivia</a></button>
+    <button class="category-button" onclick="startQuiz('Mental Ability Test')">Mental Ability Test</button>
+    <button class="category-button" onclick="startQuiz('Science')">Science</button>
+    <button class="category-button" onclick="startQuiz('General Knowledge')">General Knowledge</button>
+  </div>
+
+  <script>
+    function startQuiz(category) {
+      alert('Starting quiz in ' + category + ' category!');
+
+
+    }
+  </script>
+  
+
+</body>

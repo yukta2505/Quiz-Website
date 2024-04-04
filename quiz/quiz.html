@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+  <img src="QUIZ BUZZ.png">
+<hr color="white">
+  
+  <h2>!! Get Those Neurons Firing !! </h2>
+  <hr>
+  <div id="container">
+    <div id="welcome">
+        <h1>Welcome to the Quiz Buzz</h1>
+        <button onclick="showLogin()">Login</button>
+    </div>
+
+    <div id="login" style="display: none;">
+        <h1>Login to Start Quiz</h1>
+        <input type="text" placeholder="Username">
+        <input type="password" placeholder="Password">
+        <button id="login" onclick="showMode()"><a href="category.html">Login</a></button>
+    </div>
+</div>
+
+<script>
+    function showLogin() {
+        document.getElementById('welcome').style.display = 'none';
+        document.getElementById('login').style.display = 'flex';
+    }
+    function showMode() {
+        document.getElementById('mode').style.display = 'none';
+    }
+   
+        function showCategory() {
+            dpcument.getElementById('mode').style.display = "none"
+            document.getElementById('category').style.display = "flex";
+        }
+</script>
+
+</body>
+</html>

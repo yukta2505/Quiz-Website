@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Flashcard Quiz</title>
+</head>
+<body>
+    <h3>Maths Trivia</h3>
+    <div class="flashcards-container">
+        <div class="flashcard" onclick="showOptions(1)">
+            <h2>Question 1</h2>
+            <p>What is the value of π (pi) to two decimal places?</p>
+            <div id="options1" class="options hidden">
+                <label>
+                    <input type="radio" name="q1" value="option1"> 3.16
+                </label>
+                <label>
+                    <input type="radio" name="q1" value="option2"> 3.14
+                </label>
+                <label>
+                    <input type="radio" name="q1" value="option3"> 3.18
+                </label>
+                
+            </div>
+        </div>
+
+        <div class="flashcard" onclick="showOptions(2)">
+            <h2>Question 2</h2>
+            <p>What is the sum of the angles in a triangle?</p>
+            <div id="options2" class="options hidden">
+                <label>
+                    <input type="radio" name="q2" value="option1"> 90 degrees
+                </label>
+                <label>
+                    <input type="radio" name="q2" value="option2"> 180 degrees
+                </label>
+                <label>
+                    <input type="radio" name="q2" value="option3"> 360 degrees
+                </label>
+                
+            </div>
+        </div>
+
+        <div class="flashcard" onclick="showOptions(3)">
+            <h2>Question 3</h2>
+            <p>If a rectangle has a length og 8 units and width of 5 units,what is its area? </p>
+            <div id="options3" class="options hidden">
+                <label>
+                    <input type="radio" name="q3" value="option1"> 13 sq units
+                </label>
+                <label>
+                    <input type="radio" name="q3" value="option2"> 40 sq units
+                </label>
+                <label>
+                    <input type="radio" name="q3" value="option3"> 35 sq units
+                </label>
+                
+            </div>
+        </div>
+
+        <div class="flashcard" onclick="showOptions(4)">
+            <h2>Question 4</h2>
+            <p>What is the square root of 144</p>
+            <div id="options4" class="options hidden">
+                <label>
+                    <input type="radio" name="q4" value="option1"> 10
+                </label>
+                <label>
+                    <input type="radio" name="q4" value="option2"> 12
+                </label>
+                <label>
+                    <input type="radio" name="q4" value="option3"> 14
+                </label>
+                
+            </div>
+        </div>
+    </div>
+    <button><a href="rewards.html">Submit</a></button>
+
+    <script src="script.js"></script>
+</body>
+</html>
